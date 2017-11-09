@@ -1,8 +1,9 @@
 var breakNum = 5;
 var sessionNum = 25;
-var timerMiliseconds;
-var secondsTime;
-var minutesTime;
+
+
+var timerMiliseconds = sessionNum * 60000;
+var breakMiliseconds = breakNum * 60000;
 
 var breakDisplay = document.getElementsByClassName('break-display');
 var breakPlus = document.getElementById('break-plus');
@@ -16,12 +17,6 @@ var mainTime = document.getElementById('main-time');
 
 var start = document.getElementsByClassName('start');
 
-//event listiners
-breakPlus.addEventListener("click", addBreakNumber);
-breakMinus.addEventListener("click", subtractBreakNumber);
-sessionPlus.addEventListener("click", addSessionNumber);
-sessionMinus.addEventListener("click", subtractSessionNumber);
-start[0].addEventListener("click", startTimer);
 
 
 
@@ -59,7 +54,6 @@ function startTimer(){
 
 	setInterval(myTimer, 1000);
 }
-
 
 
 

@@ -129,13 +129,16 @@ button {
     font-size: 48px;
 }
 
-.start {
+.start,
+#reset {
     display: block;
     margin: 0 auto;
 }
 
-
-
+#reset {
+    font-size: 12px;
+    margin-top: 10px;
+}
 
 /* ==========================================================================
    Helper classes
